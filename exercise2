@@ -1,0 +1,9 @@
+fun phraseTOacronym(phase: String):String{
+    var acronym="";
+    var arr:List<String>;
+    arr=phase.split(" ");
+    for(element in arr){
+        acronym+=element[0];
+    }
+    return acronym.toUpperCase();
+ }
