@@ -1,0 +1,16 @@
+fun ARNtrans(ADNstr:String):String =
+        when(ADNstr) {
+            "G" -> "C";
+            "C" -> "G";
+            "T" -> "A";
+            "A" -> "U";
+            else -> "Not Available";
+        }
+
+
+fun main() {
+    var ADNstr = listOf("A", "G", "T", "C")
+    for (i in 0..(ADNstr.size-1)){
+        print(ARNtrans(ADNstr.get(i)))
+    }
+}
