@@ -1,0 +1,23 @@
+fun convertNumberToString(number: Int): String {
+    var result = ""
+   	var tmp = 0
+    if (number%2 == 0) {
+        tmp = number/2
+    } else {
+        tmp = (number - 1) / 2
+    }
+    for (i in 1..tmp) {
+        if (number%i == 0) {
+            when (number/i) {
+                3 -> result += "Pling"
+                5 -> result += "Plang"
+                7 -> result += "Plong"
+            }
+        }
+    }
+    return 
+          if (result.isEmpty()) 
+                number.toString() 
+          else 
+                result
+}
